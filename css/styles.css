@@ -23,6 +23,12 @@ img {
     height: auto;
 }
 
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     width: 1200px;
     padding: 0 15px;
@@ -124,6 +130,22 @@ img {
     min-height: 80px;
 }
 
+.contacts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-nav {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.icon-nav:hover,
+.icon-nav:focus {
+    fill: var(--blue-color);
+}
+
 /* HERO SECTION */
 
 .hero-section {
@@ -143,10 +165,6 @@ img {
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
      ), url('../img/background.jpg')
-    /* background-image: url('../img/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
 }
 
 .hero-tittle {
@@ -237,33 +255,17 @@ img {
     margin-right: 30px;
 }
 
-.advantages .item::before {
-    display: block;
-    content: '';
+.advantages-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 120px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
     border-radius: 4px;
 
     background-color: var(--background-color-light);
 }
 
-.icon-plate::before {
-    background-image: url('../img/plate.svg');
-}
 
-.icon-clock::before {
-    background-image: url('../img/clock.svg');
-}
-
-.icon-rate::before {
-    background-image: url('../img/rate.svg');
-}
-
-.icon-astro::before {
-    background-image: url('../img/astronaut.svg');
-}
 
 /* SECTION 3 */
 .wwd-section {
@@ -366,6 +368,42 @@ img {
 .emp-set .team-list {
     flex-basis: calc(100% / 4 - 30px);
 }
+
+/* .socials-container {
+    fill: #AFB1B8;
+} */
+
+.socials-set {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 16px;
+    padding-bottom: 30px;
+}
+
+.socials-set .item {
+    height: 44px;
+    width: 44px;
+    fill:#AFB1B8;
+}
+
+.socials-set .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-set .item:focus,
+.socials-set .item:hover {
+    background-color: var(--blue-color);
+    fill: var(--white-color);
+    border-radius: 50%;
+}
+
+/* .icon-net:hover,
+.icon-net:focus {
+    background-color: var(--blue-color);
+    fill: var(--white-color);
+} */
 
 /* Section 5 */
 
