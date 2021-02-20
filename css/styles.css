@@ -130,19 +130,20 @@ svg {
     min-height: 80px;
 }
 
-.contacts-container {
+
+.contacts {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.icon-nav {
+.icons-nav {
     margin-right: 10px;
-    fill: currentColor;
+    color: var(--text-color);
 }
 
-.icon-nav:hover,
-.icon-nav:focus {
+.icons-nav:hover,
+.icons-nav:focus {
     fill: var(--blue-color);
 }
 
