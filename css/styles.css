@@ -370,42 +370,6 @@ svg {
     flex-basis: calc(100% / 4 - 30px);
 }
 
-/* .socials-container {
-    fill: #AFB1B8;
-} */
-
-.socials-set {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 16px;
-    padding-bottom: 30px;
-}
-
-.socials-set .item {
-    height: 44px;
-    width: 44px;
-    fill:#AFB1B8;
-}
-
-.socials-set .item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.socials-set .item:focus,
-.socials-set .item:hover {
-    background-color: var(--blue-color);
-    fill: var(--white-color);
-    border-radius: 50%;
-}
-
-/* .icon-net:hover,
-.icon-net:focus {
-    background-color: var(--blue-color);
-    fill: var(--white-color);
-} */
-
 /* Section 5 */
 
 .clients-section {
