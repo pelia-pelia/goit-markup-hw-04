@@ -135,17 +135,14 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--text-color);
 }
 
 .icons-nav {
     margin-right: 10px;
-    color: var(--text-color);
+    fill: currentColor;
 }
 
-.icons-nav:hover,
-.icons-nav:focus {
-    fill: var(--blue-color);
-}
 
 /* HERO SECTION */
 
@@ -377,9 +374,6 @@ svg {
     padding-bottom: 30px;
 }
 
-.icon-socials {
-    fill: #AFB1B8;
-}
 
 .icon-container {
     display: flex;
@@ -387,17 +381,25 @@ svg {
     justify-content: center;
     height: 44px;
     width: 44px;
+
+    color: #AFB1B8;
 }
 
-.icon-socials:hover,
-.icon-socials:focus {
-    fill: white;
+.icon-socials {
+    fill: currentColor;
 }
+
 
 .icon-container:hover,
 .icon-container:focus {
     border-radius: 50%;
     background-color: var(--blue-color);
+    color: var(--white-color);
+}
+
+.icon-socials:focus,
+.icon-socials:hover {
+
 }
 
 /* Section 5 */
@@ -421,9 +423,6 @@ svg {
     padding-bottom: 94px;
 }
 
-.clients-icon {
-    fill: #AFB1B8;
- }
 
 .clients-list {
     display: flex;
@@ -433,16 +432,18 @@ svg {
     height: 90px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+
+    color: #AFB1B8;
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
-    fill: var(--blue-color);
+.clients-icon {
+    fill: currentColor;
 }
 
 .clients-list:hover,
-.clients-list:focus { 
-    border-color: var(--blue-color);
+.clients-list:focus {
+    color: var(--blue-color);
+    border: 1px solid var(--blue-color);
 }
 
 /* FOOTER */
@@ -519,16 +520,26 @@ svg {
 }
 
 .logos {
-    fill: var(--white-color);
+    color: var(--white-color);
+}
+
+.logos-icons {
+    fill: currentColor;
+}
+
+.logos:focus,
+.logos:hover {
+    background-color: var(--blue-color);
+}
+
+.footer-icons:hover,
+.footer-icons:focus {
+    background-color: var(--blue-color);
+    color: var(--white-color);
 }
 
 .footer-icons:not(:last-child) {
     margin-right: 10px;
-}
-
-.footer-icons:focus,
-.footer-icons:hover {
-    background-color: var(--blue-color);
 }
 
 .cont-container {
@@ -551,11 +562,6 @@ svg {
 .buttons .item:not(:last-child) {
     margin-right: 8px;
 }
-
-/* .buttons .item:hover,
-.buttons .item:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-} */
 
 .filter-btn {
     padding: 6px  22px;
@@ -581,7 +587,7 @@ svg {
 }
 
 .filter-btn:focus,
-.filter-btn:hover{
+.filter-btn:hover {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -590,11 +596,6 @@ svg {
 .projects-list {
     background-color: var(--white-color);
     border: 1px solid #EEEEEE;
-}
-
-.projects-list:hover,
-.projects-list:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .text-container{
@@ -638,4 +639,13 @@ svg {
     flex-basis: calc(100% / 3 - 30px);
     margin-bottom: 30px;
     margin-right: 30px;
+}
+
+.card-link{
+    display: block;
+}
+
+.card-link:focus,
+.card-link:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
